@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title> Technical Blog Application </title>
+
+<html xmlns:th="http://thymeleaf.org">
+
+<head th:replace="layout :: site-head">
+    <title>Spring MVC Application - User Posts</title>
 </head>
+
+<header th:replace="layout :: logged-in"></header>
+
 <body>
-<header th:replace="layout :: logged-out"></header>
-<h1>All Technical Posts</h1> <aside> <input type="submit" value="Create Post"/> </aside>
+<h1>Welcome User. These are your posts</h1>
 <main id="posts">
     <post th:each="p : ${posts}">
         <h2 th:text="${p.title}"></h2>
@@ -16,6 +19,5 @@
         </div>
     </post>
 </main>
-
 </body>
 </html>
