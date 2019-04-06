@@ -17,6 +17,8 @@ public class UserRepository {
 
     /*Some more comments added to test branching and merging similarly */
 
+    /*Some more comments added to test branching and merging similarly in branch2*/
+
 
     public void registerUser(User newUser) {
         EntityManager em = emf.createEntityManager();
