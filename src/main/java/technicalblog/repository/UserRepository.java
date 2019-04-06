@@ -3,6 +3,7 @@ package technicalblog.repository;
 
 import org.springframework.stereotype.Repository;
 import technicalblog.model.User;
+import java.util.Date;
 
 import javax.persistence.*;
 
@@ -13,6 +14,9 @@ public class UserRepository {
     private EntityManagerFactory emf;
 
 /*Some comments added to test branching and merging */
+
+    /*Some more comments added to test branching and merging similarly */
+
 
     public void registerUser(User newUser) {
         EntityManager em = emf.createEntityManager();
